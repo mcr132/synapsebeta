@@ -1,0 +1,2 @@
+﻿CREATE USER [synapsebetaws] FOR EXTERNAL PROVIDER;
+
