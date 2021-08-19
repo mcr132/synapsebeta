@@ -4,7 +4,7 @@
     azureSubscription: 'Beta(c5762125-c990-458a-8649-e28b6dd0297d)'
     AuthenticationType: 'server'
     ServerName: 'synapsebetaws.sql.azuresynapse.net,1433'
-    DatabaseName: 'sqlpool01'
+    DatabaseName: 'sqlpool01_PPE'
     SqlUsername: 'sqladminuser'
     SqlPassword: 'Pr0t3ct0r!'
     deployType: 'DacpacTask'
