@@ -1,4 +1,15 @@
 # .NET Desktop
+- task: SqlAzureDacpacDeployment@1
+  inputs:
+    azureSubscription: 'Beta(c5762125-c990-458a-8649-e28b6dd0297d)'
+    AuthenticationType: 'server'
+    ServerName: 'synapsebetaws.sql.azuresynapse.net,1433'
+    DatabaseName: 'sqlpool01'
+    SqlUsername: 'sqladminuser'
+    SqlPassword: 'Pr0t3ct0r!'
+    deployType: 'DacpacTask'
+    DeploymentAction: 'Publish'
+    IpDetectionMethod: 'AutoDetect'
 # Build and run tests for .NET Desktop or Windows classic desktop solutions.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
