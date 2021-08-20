@@ -1,0 +1,35 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/c5762125-c990-458a-8649-e28b6dd0297d/resourceGroups/synapsebeta/providers/Microsoft.DataFactory/factories/adf-adfbeta-beta-01/queryPipelineRuns?api-version=2018-06-01",
+					"method": "POST",
+					"body": {
+						"lastUpdatedAfter": "2018-08-13T00:00:00Z",
+						"lastUpdatedBefore": "2018-08-18T00:00:00Z"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2021-08-17T00:49:04Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
