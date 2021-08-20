@@ -148,6 +148,7 @@
     <Build Include="asb\External Tables\FactOnlineSales.sql">
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
+    <Build Include="cso\Tables\FactInternetSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureDw\SqlSchemas\master.dacpac">
